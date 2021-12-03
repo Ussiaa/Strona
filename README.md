@@ -1,2 +1,3 @@
 # Strona
-# Strona
+
+Strona na zajecia :D
