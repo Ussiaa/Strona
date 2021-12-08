@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:wght@300&display=swap');
+
+
+* {
+    margin: 0; 
+    border: 0;
+    padding: 0;
+}
+
+.welcome{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    color: #222222;
+    font-size: 150%;
+    letter-spacing:20px;
+    animation-name: welcome;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    animation-fill-mode:forwards;
+}
+
+@keyframes welcome {
+    0%   {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}   
+
+.flexbox-container {
+    display: flex;
+}
+
+.flexbox-container div{
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    background-repeat: no-repeat;
+    animation-fill-mode: backwards;
+    z-index: 1;
+}
+
+@keyframes slide {
+    0%   {background-size:0% 100%;}
+    100% {background-size:100% 100%;}
+}
+
+.flexbox {
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox:hover {
+    width: 150%;
+}
+
+.red{
+    background: linear-gradient(to bottom, #F0727C, #F0727C);
+    animation-delay: 2s;
+}
+
+.orange{
+    background: linear-gradient(to bottom, #F6A974 ,#F6A974);
+    animation-delay: 2s;
+    min-height: 100px
+}
+
+.yellow{
+    background: linear-gradient(to bottom, #E4DA7A , #E4DA7A);
+    animation-delay: 2s;
+}
+
+.green{
+    background: linear-gradient(to bottom, #8AD172, #8AD172);
+    animation-delay: 2s;
+    min-height: 100px
+}
+
+.blue{
+    background: linear-gradient(to bottom, #779AED,  #779AED);
+    animation-delay: 2s;
+}
+
+.purple{
+    background: linear-gradient(to bottom, #BF5FBF, #BF5FBF);
+    animation-delay: 2s;
+}
+
+.flexbox div {
+    font-family: 'Nunito', sans-serif;
+    animation-name: fadeIn;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.content {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 40%;
+    max-width: 200px;
+    height: 40%;
+    max-height: 200px;
+    margin: 15%;
+    filter: invert(13%) sepia(3%) saturate(358%) hue-rotate(71deg) brightness(93%) contrast(96%);
+}
+
+span {
+    display: none;
+    font-size: 70%;
+    text-align: center;
+    color: #222222;
+}
+
+.flexbox:hover span {
+    font-weight: bold;
+    display: block;
+}
+
+#smallbox {
+    cursor: pointer;
+}
