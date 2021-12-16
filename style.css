@@ -38,7 +38,7 @@
 
 .flexbox-container div{
     animation-name: slide;
-    animation-duration: 2s;
+    animation-duration: 1.3s;
     animation-timing-function: linear;
     background-repeat: no-repeat;
     animation-fill-mode: backwards;
@@ -97,7 +97,7 @@
 .flexbox div {
     font-family: 'Nunito', sans-serif;
     animation-name: fadeIn;
-    animation-duration:5s;
+    animation-duration:4s;
     animation-fill-mode: forwards;
 }
 
